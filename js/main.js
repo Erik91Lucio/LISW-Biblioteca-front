@@ -10,7 +10,7 @@ require(['app', 'router'],
 				app.router = new Router();
 				var hasPushstate = !!(window.history && history.pushState);
 				if (hasPushstate) {
-					Backbone.history.start({pushState : true, root : '/'});
+					Backbone.history.start({pushState : true, root : '/alex'});
 				} else {
 					Backbone.history.start();
 				}

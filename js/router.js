@@ -9,7 +9,8 @@ define([ 'app', 'signupView', 'loginView', 'presentationView' ], function(app,
 		routes : {
 			'':'index',
 			'sign' : 'signup',
-			'log' : 'login'
+			'log' : 'login',
+			'books' : 'listBooks'
 		},
 		show : function(view, args) {
 			if (app.debug)
@@ -24,6 +25,9 @@ define([ 'app', 'signupView', 'loginView', 'presentationView' ], function(app,
 		},
 		login : function() {
 			this.show(new LoginView());
+		},
+		listBooks : function() {
+			this.show(new ListBooksView());
 		}
 	});
 	return router;
